@@ -2,7 +2,7 @@
 
 ## Overview
 
-There are some core concepts that every Angular developer will need to familiarise themselves with. This will teach you the core concepts that you will be using in every Angular application you make.
+In this lesson, we are going to look at the core concepts that we will use in every Angular application. Some will be familiar to you, however some may seem a bit strange. Don't worry if they take time to sink in!
 
 ## Objectives
 
@@ -65,6 +65,8 @@ Like before, we order a hot chocolate. The cashier takes your order, updating th
 
 The differences here is that we no longer have one person taking your order and delivering your drink. Instead, the cashier (ViewModel) uses a helper (business logic) to get your drink order (Model) completed and only modifies the lid with your name (view logic) and returns it to you (the View).
 
+This is the preferred architecture for Angular applications. Why? We no longer have a controller doing everything for us. Instead, we can simplify the application down massively by having helpers that we can use everywhere.
+
 ## Data-binding
 
 Data-binding is the term for automatic synchronisation of data between the model and the view. This comes in two formats - one-way and two-way data-binding.
@@ -72,6 +74,8 @@ Data-binding is the term for automatic synchronisation of data between the model
 ### One-way data-binding
 
 Imagine you have a form input, asking for the user's name. You've also got a `<h2>` tag below, that you want to populate to say "Hey, {name}!". Wouldn't it be neat if this `<h2>` tag could update as the user types in their name? This is called one-way data-binding. The model (our user's name) is updated and our view is updated to reflect the change to our model.
+
+For example, you'd use one-way data-binding when you've got a search box - the user can type in their search query and the title can change to "Results for: {searchQuery}" - pretty cool!
 
 [Here's an example of one-way data-binding.](https://jsfiddle.net/6z6d5b7x/) 
 
@@ -96,6 +100,8 @@ In the above example our template compiles to become our View, which is a repres
 Angular offers dependency injection. This allows us to request whatever Controller/Directive/etc. we want, instead of receiving them all in a specific order. This is not a default JavaScript behaviour. 
 
 This is extremely powerful - it means that we can inject our custom Controllers etc. into all of our code, and have every dependency available in the application.
+
+We will revisit Dependency Injection later on, in greater detail.
 
 ## Resources
 
