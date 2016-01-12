@@ -1,4 +1,4 @@
-# Angular Core Concepts
+# MVVM and Data Binding in Angular
 
 ## Overview
 
