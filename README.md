@@ -32,7 +32,7 @@ This looks a lot more complicated, but it isn't! Instead of returning rendered H
 
 This has massive advantages - if 1000 users are on the website, instead of one server rendering 1000 pages, 1000 clients are rendering one page, reducing strain on the server. We can also re-use backend endpoints - our mobile website and our desktop website can both request the same data from the server but display it differently.
 
-One example of this that you can checkout for yourselves is if you go to Facebook. You might notice how you don't actually see anything until the content very quickly and then the client renders this - saving so many resources in the mean time!
+One example of this that you can checkout for yourselves is if you go to Facebook. You might notice how you don't actually see anything until the content very quickly loads and then the client renders this - saving so many resources in the mean time!
 
 ## MVC/MVVM
 
