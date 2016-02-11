@@ -1,6 +1,15 @@
 tags:
-  - a tag
+  - angular
+  - core concepts
+  - dependency injection
+  - model view controller
+  - mvc
+  - mvvm
+  - model view viewmodel
+  - single page applications
 languages:
-  - a language
-resources: 
+  - javascript
+frameworks:
+  - angular
+resources:
   - 0
