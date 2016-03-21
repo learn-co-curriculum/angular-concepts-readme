@@ -14,7 +14,7 @@ In this lesson, we are going to look at the core concepts that we will use in ev
 
 ## Single Page Applications
 
-Angular allows us to create single page applications (SPAs). The means that the user goes to one page and very rarely will have to refresh/leave that page to go to other parts of the website. Ever wondered how we can go to Twitter and never have to actually refresh the page? Yet all of our notifications, tweets, etc are all real-time and constantly up-to-date? You guessed it - Twitter is a single page application!
+Angular allows us to create single page applications (SPAs). This means that the user goes to one page and very rarely will have to refresh/leave that page to go to other parts of the website. Ever wondered how we can go to Twitter and never have to actually refresh the page? Yet all of our notifications, tweets, etc are all real-time and constantly up-to-date? You guessed it - Twitter is a single page application!
 
 Single page applications handle all the routing, calling different parts of your codebase dependant on what URL the user is currently at. If we look back at Twitter, you'll notice how the URL does change page yet the page doesn't refresh. This is because we have now handled all routing over to the client side instead of the server. The client can see where the user has intended to go, and select the specific code for that page - magical!
 
@@ -108,3 +108,5 @@ In the above example our template compiles to become our View, which is a repres
 
 - [AngularJS Dependency Injection Manual](https://docs.angularjs.org/guide/di)
 - [AngularJS Databinding Documentation](https://docs.angularjs.org/guide/databinding)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-concepts-readme'>Angular Concepts</a> on Learn.co and start learning to code for free.</p>
