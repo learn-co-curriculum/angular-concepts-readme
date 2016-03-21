@@ -16,7 +16,7 @@ In this lesson, we are going to look at the core concepts that we will use in ev
 
 Angular allows us to create single page applications (SPAs). This means that the user goes to one page and very rarely will have to refresh/leave that page to go to other parts of the website. Ever wondered how we can go to Twitter and never have to actually refresh the page? Yet all of our notifications, tweets, etc are all real-time and constantly up-to-date? You guessed it - Twitter is a single page application!
 
-Single page applications handle all the routing, calling different parts of your codebase dependant on what URL the user is currently at. If we look back at Twitter, you'll notice how the URL does change page yet the page doesn't refresh. This is because we have now handled all routing over to the client side instead of the server. The client can see where the user has intended to go, and select the specific code for that page - magical!
+Single page applications handle all the routing, calling different parts of your codebase depending on what URL the user is currently at. If we look back at Twitter, you'll notice how the URL does change yet the page doesn't refresh. This is because we have now handed all routing over to the client side instead of the server. The client can see where the user has intended to go, and select the specific code for that page - magical!
 
 Tranditionally, server-side rendering would be like the following -
 
@@ -32,13 +32,13 @@ This looks a lot more complicated, but it isn't! Instead of returning rendered H
 
 This has massive advantages - if 1000 users are on the website, instead of one server rendering 1000 pages, 1000 clients are rendering one page, reducing strain on the server. We can also re-use backend endpoints - our mobile website and our desktop website can both request the same data from the server but display it differently.
 
-One example of this that you can checkout for yourselves is if you go to Facebook. You might notice how you don't actually see anything until the content very quickly loads and then the client renders this - saving so many resources in the mean time!
+One example of this that you can check out for yourself is if you go to Facebook. You might notice how you don't actually see anything until the content very quickly loads and then the client renders this - saving so many resources in the meantime!
 
 ## MVC/MVVM
 
-You might have seen the term MVC and MVVM being thrown around. These stand for Model-View-Controller and Model-View-ViewModel respectively. 
+You might have seen the terms MVC and MVVM being thrown around. These stand for Model-View-Controller and Model-View-ViewModel respectively. 
 
-These are concepts for how we architecture our software. We do this to promote separation of concerns. Separation of concerns is dividing our code into logical chunks, with each chunk addressing a separate concern. This allows us to create testable, reusable and scalable well designed code.
+These are concepts for how we architect our software. We do this to promote separation of concerns. Separation of concerns is dividing our code into logical chunks, with each chunk addressing a separate concern. This allows us to create testable, reusable and scalable well designed code.
 
 They are both quite similar, however there are a few differences -
 
@@ -50,7 +50,7 @@ The view is the user interface. This takes data from the model and displays it n
 
 The controller receives user input and makes calls to the model and view to update/modify either. This keeps the main aspects of our application separate.
 
-As easy way to visualize this is if we imagine we are ordering a coffee. The Model is the information about the drink we've ordered, the Controller is the barista and the View is the finished drink. The barista would make the drink from our order (the Model), and serve it to us (the View).
+An easy way to visualize this is if we imagine we are ordering a coffee. The Model is the information about the drink we've ordered, the Controller is the barista and the View is the finished drink. The barista would make the drink from our order (the Model), and serve it to us (the View).
 
 So for example, if you walked into a coffee bar and ordered a hot chocolate, you'd get a hot chocolate. If you then wanted marshmallows, you'd ask the barista, who would go back to the till and modify your order to add on marshmallows. They would also then put marshmallows in your drink, and return you the updated drink (the View).
 
@@ -70,7 +70,7 @@ The differences here is that we no longer have one person taking your order and 
 
 This is the preferred architecture for Angular applications. Why? We no longer have a controller doing everything for us. Instead, we can simplify the application down massively by having helpers that we can use everywhere.
 
-The ViewModel is responsible for all view logic - changing the model data appropriately for use in the view. (For example, our model might contain a unix timestamp for a date but we need it in human readable format). Your model will contain all of your business logic, and your view is there to display your model (modified by the ViewModel).
+The ViewModel is responsible for all view logic - changing the model data appropriately for use in the view. (For example, our model might contain a UNIX timestamp for a date but we need it in human readable format). Your model will contain all of your business logic, and your view is there to display your model (modified by the ViewModel).
 
 ## Data-binding
 
