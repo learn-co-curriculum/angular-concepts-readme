@@ -18,7 +18,7 @@ Angular allows us to create single page applications (SPAs). This means that the
 
 Single page applications handle all the routing, calling different parts of your codebase depending on what URL the user is currently at. If we look back at Twitter, you'll notice how the URL does change yet the page doesn't refresh. This is because we have now handed all routing over to the client side instead of the server. The client can see where the user has intended to go, and select the specific code for that page - magical!
 
-Tranditionally, server-side rendering would be like the following -
+Traditionally, server-side rendering would be like the following -
 
 ![Server-side rendering](http://www.michaelgallego.fr/images/posts/2012-11-26-client-side-1.png)
 
@@ -110,3 +110,5 @@ In the above example our template compiles to become our View, which is a repres
 - [AngularJS Databinding Documentation](https://docs.angularjs.org/guide/databinding)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-concepts-readme'>Angular Concepts</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-concepts-readme'>Angular Concepts</a> on Learn.co and start learning to code for free.</p>
